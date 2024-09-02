@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        XAI
+    </div>
+    <div class="container">
+        <h1>Healthcare Disease Detection</h1>
+
+        <form action="/" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+    
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select><br>
+    
+            <label for="chestpaintype">Chest Pain:</label>
+            <select id="chestpaintype" name="chestpaintype" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
+            <!-- <input type="number" id="chestpaintype" placeholder="Range of 100-140" name="chestpaintype" required><br> -->
+    
+            <label for="trestbps">Blood Pressure (mm Hg):</label>
+            <input type="number" id="trestbps" placeholder="Range of 200-300" name="trestbps" required><br>
+    
+            <label for="cholesterol">Cholesterol (mg/dl):</label>
+            <input type="number" id="cholesterol" placeholder="Range of 130-250" name="cholesterol" required><br>
+    
+            <label for="fbs">Fasting Blood Sugar > 120 mg/dl:</label>
+            <select id="fbs" name="fbs" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
+    
+            <label for="restecg">Resting ECG Results:</label>
+            <select id="restecg" name="restecg" required>
+                <option value="0">ST</option>
+                <option value="1">Normal</option>
+            </select><br>
+            <!-- <input type="number" id="restecg" placeholder="" name="restecg" required><br> -->
+    
+            <label for="thalach">Maximum Heart Rate Achieved:</label>
+            <input type="number" id="thalach" name="thalach" required><br>
+    
+            <label for="exang">Exercise Induced Angina:</label>
+            <select id="exang" name="exang" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
+    
+            <label for="stdepression">ST Depression:</label>
+            <input type="number" id="stdepression" name="stdepression" step="0.1" required><br>
+    
+            <label for="stslope">Slope of Peak Exercise ST Segment:</label>
+            <input type="number" id="stslope" name="stslope" required><br>
+    
+            <label for="num_major_vessels">Number of Major Vessels:</label>
+            <input type="number" id="num_major_vessels" name="num_major_vessels" required><br>
+    
+            <label for="thal">Thalassemia:</label>
+            <input type="number" id="thal" name="thal" required><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
